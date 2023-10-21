@@ -6,7 +6,8 @@ app = FastAPI()
 
 @app.get("/")
 def read_root():
-    return {"Hello" : "World"}
+    print('hit!')
+    return { "message" : "Hello world!"}
 
 @app.post("/uploadaudio")
 async def parse_audio(audio_file: UploadFile):
