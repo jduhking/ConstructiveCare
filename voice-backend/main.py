@@ -7,7 +7,6 @@ app = FastAPI()
 
 @app.get("/")
 def read_root():
-    print('hit!')
     return { "message" : "Hello world!"}
 @app.get("/audio")
 def send_audio():
